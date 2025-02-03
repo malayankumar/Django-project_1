@@ -7,4 +7,5 @@ class Person(models.Model):
     price = models.PositiveIntergerField(null = False)
     desc = models.TextField()
     pic = models.ImageField(upload_to = "products/", null = False)
+    stock = models.PositiveIntegerField(default = 1)
     
