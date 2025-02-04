@@ -3,6 +3,7 @@
         "donjayamanne.python-extension-pack",
         "ms-python.debugpy",
         "ms-python.vscode-pylance",
-        "github.copilot-chat"
+        "github.copilot-chat",
+        "ms-vscode.live-server"
     ]
 }
