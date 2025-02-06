@@ -4,6 +4,7 @@
         "ms-python.debugpy",
         "ms-python.vscode-pylance",
         "github.copilot-chat",
-        "ms-vscode.live-server"
+        "ms-vscode.live-server",
+        "ecmel.vscode-html-css"
     ]
 }
