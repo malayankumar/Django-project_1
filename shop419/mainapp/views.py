@@ -8,5 +8,26 @@ def homeView(request):
     context ={
         'product_list': products
     }
-    template = loader.get_template('mainapp/home.html')
-    return HttpResponse(templates.render(context, request))
+    template = loader.get_template('home.html')
+    return HttpResponse(template.render(context, request))
+
+def aboutView(request):
+    context = {
+        'name': "Ayan",
+        'students': [
+            "Varun",
+            "Harsha",
+            "Srikanth",
+        ],
+        'slept':  False,
+
+    }
+    template = loader.get_template('about.html')
+    return HttpResponse(template.render(context, request))
+
+def contactsView(request):
+    context = {
+
+    }
+    template = loader.get_template('contacts.html')
+    return HttpResponse(template.render(context, request))
