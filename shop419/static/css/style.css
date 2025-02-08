@@ -3,15 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     margin-top: 75px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+
     main {
         margin: 0 auto;
         width: 100%;
         padding: 20px;
+    }
+
+    .description {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+        max-width: 300px;
+        /* Adjust as needed */
+    }
+
+    .read-more {
+        color: blue;
+        cursor: pointer;
+        display: inline;
     }
 }
 
