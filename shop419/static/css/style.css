@@ -6,6 +6,7 @@
 
 body {
     margin-top: 75px;
+    margin-bottom: 80px;
     width: 100%;
     margin-left: 0;
     margin-right: 0;
@@ -14,6 +15,72 @@ body {
         margin: 0 auto;
         width: 100%;
         padding: 20px;
+
+        div.container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+
+            div.card {
+                /* border: 2px solid; */
+                box-shadow: 1px 2px 5px 2px black;
+                border-radius: 15px;
+                height: 470px;
+                width: 270px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                overflow: hidden;
+                background-color: white;
+                transition-duration: 2s;
+
+                div.card_img {
+                    height: 50%;
+                    width: 100%;
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-fit: fill;
+                    }
+                }
+
+                div.card_text {
+                    height: 50%;
+                    text-align: center;
+
+                    h4 {
+                        height: 15px;
+                    }
+
+                    h6 {
+                        height: 10px;
+                    }
+
+                    p {
+                        height: 100px;
+                        padding: 4px;
+                        overflow-y: scroll;
+                    }
+
+                    button {
+                        height: 50px;
+                        width: 150px;
+                        /* padding: 2px; */
+                        border-radius: 8px;
+                        color: white;
+                        font-weight: 600;
+                        background-color: rgb(16, 102, 231);
+                    }
+                }
+            }
+
+            div.card:hover {
+                background-color: rgb(255, 255, 255);
+                box-shadow: 1px 2px 5px 2px black;
+                transform: scale(1.10);
+                transition-duration: 0.5s;
+            }
+        }
     }
 
     .description {
@@ -38,6 +105,7 @@ body {
 
 header {
     position: fixed;
+    z-index: 5;
     left: 0;
     top: 0;
     width: 100%;
