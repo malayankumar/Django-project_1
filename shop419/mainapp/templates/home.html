@@ -12,7 +12,11 @@ Home
             <img src="{{product.pic}}" alt="image not found">
         </div>
         <div class="card_text">
-            <h4>{{product.name}}</h4>
+            <h4>
+                <a href="{% url 'prod_details' product.id %}" >
+                    {{product.name}}
+                </a>
+            </h4>
             <h6>Price : <ins>{{product.price}}</ins></h6>
             <h6>Stock : <ins>{{product.stock}}</ins></h6>
             <p> Description :

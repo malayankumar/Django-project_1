@@ -37,7 +37,7 @@ class AddProduct(CreateView):
 class ProductDetails(DetailView):
     model = Product
     template_name = 'prod_details.html'
-    context_object_name = 'product'
+    context_object_name = 'prod'
 
 #update
 class UpdateProduct(UpdateView):
