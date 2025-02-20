@@ -55,16 +55,10 @@ class DeleteProduct(DeleteView):
     success_url = reverse_lazy('home')
 
 
-def searchView(request):
+def SearchView(request):
     query = request.GET.get('search_text') 
-    # fetch the query text from GET request 
-    
     
     results = Product.objects.filter(name__icontains = query) 
-    # collect the product objects matching the name
-    # This runs 'SELECT * FROM product WHERE name like '%<query>%';
-    # icontains is case-insensitive
-    # contains can be used for case-sensitive
     
     context = {
         'items' : results,
