@@ -13,7 +13,7 @@ Home
         </div>
         <div class="card_text">
             <h4>
-                <a href="{% url 'prod_details' product.id %}" >
+                <a href="{% url 'prod_details' product.id %}">
                     {{product.name}}
                 </a>
             </h4>
@@ -22,7 +22,15 @@ Home
             <p> Description :
                 <br><ins>{{product.desc}}</ins>
             </p>
-            <button type="button">Add to cart</button>
+            {% if user.is_staff %}
+            <a href="{% url 'prod_details' product.id %}">
+                <button type="button">Edit the product</button>
+            </a>
+            {% else %}
+            <a href="{% url 'add_to_cart' product.id %}">
+                <button type="button">Add to cart</button>
+            </a>
+            {% endif %}
         </div>
     </div>
     {% endfor %}
