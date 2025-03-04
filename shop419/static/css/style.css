@@ -16,73 +16,76 @@ body {
         width: 100%;
         padding: 20px;
 
-        div.container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
+        div.home {
+            div.container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
 
-            div.card {
-                /* border: 2px solid; */
-                box-shadow: 1px 2px 5px 2px black;
-                border-radius: 15px;
-                height: 490px;
-                width: 270px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                overflow: hidden;
-                background-color: white;
-                transition-duration: 2s;
+                div.card {
+                    /* border: 2px solid; */
+                    box-shadow: 1px 2px 5px 2px black;
+                    border-radius: 15px;
+                    height: 490px;
+                    width: 270px;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    background-color: white;
+                    transition-duration: 2s;
 
-                div.card_img {
-                    height: 50%;
-                    width: 100%;
-
-                    img {
-                        height: 100%;
+                    div.card_img {
+                        height: 50%;
                         width: 100%;
-                        object-fit: fill;
-                    }
-                }
 
-                div.card_text {
-                    height: 50%;
-                    text-align: center;
-
-                    h4 {
-                        margin-bottom: 20px;
-                        height: 15px;
-                        a{
-                            color: black;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: fill;
                         }
                     }
 
-                    h6 {
-                        height: 10px;
-                    }
+                    div.card_text {
+                        height: 50%;
+                        text-align: center;
 
-                    p {
-                        height: 100px;
-                        padding: 4px;
-                        overflow-y: scroll;
-                    }
+                        h4 {
+                            margin-bottom: 20px;
+                            height: 15px;
 
-                    button {
-                        height: 50px;
-                        width: 150px;
-                        /* padding: 2px; */
-                        border-radius: 8px;
-                        color: white;
-                        font-weight: 600;
-                        background-color: rgb(16, 102, 231);
+                            a {
+                                color: black;
+                            }
+                        }
+
+                        h6 {
+                            height: 10px;
+                        }
+
+                        p {
+                            height: 100px;
+                            padding: 4px;
+                            overflow-y: scroll;
+                        }
+
+                        button {
+                            height: 50px;
+                            width: 150px;
+                            /* padding: 2px; */
+                            border-radius: 8px;
+                            color: white;
+                            font-weight: 600;
+                            background-color: rgb(16, 102, 231);
+                        }
                     }
                 }
-            }
 
-            div.card:hover {
-                background-color: rgb(255, 255, 255);
-                box-shadow: 1px 2px 5px 2px black;
-                transform: scale(1.10);
-                transition-duration: 0.5s;
+                div.card:hover {
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: 1px 2px 5px 2px black;
+                    transform: scale(1.10);
+                    transition-duration: 0.5s;
+                }
             }
         }
     }
